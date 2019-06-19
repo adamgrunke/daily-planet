@@ -3,5 +3,10 @@
     <h2><%=article.title %></h2> 
 
     <p> <%= article.body%></p>
-
+    <a href="/articles/<%= id %>/edit">Edit this Article!</a>
   
+  <form method="POST" action="/articles/<%= id %>/?_method=DELETE">
+      <input type="submit" value="DELEEEETE">
+
+</form>
+    <a href="/articles">Return to other articles</a>

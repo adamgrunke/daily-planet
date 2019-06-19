@@ -1,0 +1,13 @@
+<h2>Update yer Article Info</h2>
+<a href="/articles"> Return to the rest of the articles!</a>
+
+
+<form method="POST" action="/articles/<%= id %>/?_method=PUT" >
+    <label for="articleTitle">Title</label>
+    <input type="text" name="articleTitle" value="<%= articleData.title%>"/>
+
+    <label for="articleBody"> Name </label>
+    <input type="text" name="articleBody" value="<%= articleData.body%>" /> 
+
+    <input type="submit" value="UPDATE the story!">
+</form>
